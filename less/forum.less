@@ -1,34 +1,34 @@
 /* GreenUi Theme */
 @import "common.less";
 @import "hljs.less";
-@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Play:wght@400;700&family=Scada:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Play:wght@400;700&family=Scada:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 :root {
-    & when (@config-dark-mode =false) {
-        --muted-color: #1b1b1b;
-        --muted-more-color: #4c555e;
-        --all-bg-color: #ffffff;
-        --all-bg-color-hover: #f7f7f7;
-        --text-color: #1b1b1b;
-        --green-shadow-box: 0 1px 4px rgba(88, 110, 101, 30%);
-        --button-color: #1b1b1b;
-        --header-bg: #ffffff;
-    }
+  & when (@config-dark-mode =false) {
+    --muted-color: #1b1b1b;
+    --muted-more-color: #4c555e;
+    --all-bg-color: #ffffff;
+    --all-bg-color-hover: #f7f7f7;
+    --text-color: #1b1b1b;
+    --green-shadow-box: 0 1px 4px rgba(88, 110, 101, 30%);
+    --button-color: #1b1b1b;
+    --header-bg: #ffffff;
+  }
 
-    & when (@config-dark-mode =true) {
-        --muted-color: #f1f1f1;
-        --muted-more-color: #DEDEDE;
-        --all-bg-color: #2c3332;
-        --all-bg-color-hover: #262b2b;
-        --text-color: #f1f1f1;
-        --green-shadow-box: 0 1px 4px rgba(16, 16, 16, 30%);
-        --button-color: #f1f1f1;
-        --header-bg: #2c3332;
-    }
+  & when (@config-dark-mode =true) {
+    --muted-color: #f1f1f1;
+    --muted-more-color: #dedede;
+    --all-bg-color: #2c3332;
+    --all-bg-color-hover: #262b2b;
+    --text-color: #f1f1f1;
+    --green-shadow-box: 0 1px 4px rgba(16, 16, 16, 30%);
+    --button-color: #f1f1f1;
+    --header-bg: #2c3332;
+  }
 }
 
 li {
-    border-radius: @border-radius !important;
+  border-radius: @border-radius !important;
 }
 
 .FlarumBlogOverview .BlogFeatured-list-item,
@@ -37,374 +37,390 @@ li {
 .FlarumBlog-Article-Comments,
 .BlogSideWidget-item,
 .FlarumBlog-Article-Author {
-    border-radius: @border-radius !important;
-    box-shadow: unset !important;
+  border-radius: @border-radius !important;
+  box-shadow: unset !important;
 }
 
 .BlogSideWidget {
-    border-radius: @border-radius !important;
-    box-shadow: unset !important;
-    padding-left: 8px;
-    padding-right: 8px;
-    padding-bottom: 8px;
+  border-radius: @border-radius !important;
+  box-shadow: unset !important;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 8px;
 }
 
 .FlarumBlog-Article-Author-background,
-.FlarumBlogItem .FlarumBlog-Article .FlarumBlog-Article-Container .FlarumBlog-Article-Image {
-    border-radius: @border-radius @border-radius 0 0 !important;
-    box-shadow: unset !important;
+.FlarumBlogItem
+  .FlarumBlog-Article
+  .FlarumBlog-Article-Container
+  .FlarumBlog-Article-Image {
+  border-radius: @border-radius @border-radius 0 0 !important;
+  box-shadow: unset !important;
 }
 
 .WelcomeHero {
-    color: #fdfdfd;
-    background: linear-gradient(160deg, var(--control-bg-shaded), var(--button-primary-bg-hover));
+  color: #fdfdfd;
+  background: linear-gradient(
+    160deg,
+    var(--control-bg-shaded),
+    var(--button-primary-bg-hover)
+  );
 }
 
 body,
 #app .App-content {
-    background-color: var(--control-bg-light);
-    font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Ubuntu, Cantarell, Oxygen, Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--control-bg-light);
+  font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Ubuntu, Cantarell, Oxygen, Roboto, Helvetica, Arial, sans-serif;
 }
 
 #drawer,
 #app-navigation {
-    & when (@config-colored-header =false) {
-        background-color: var(--control-bg-light);
-    }
+  & when (@config-colored-header =false) {
+    background-color: var(--control-bg-light);
+  }
 }
 
-.ForumStatistics.containerNarrow>.row>div {
-    background: var(--all-bg-color);
-    padding: 12px;
-    box-shadow: var(--green-shadow-box);
-    border-radius: @border-radius;
-    color: var(--text-color);
+.ForumStatistics.containerNarrow > .row > div {
+  background: var(--all-bg-color);
+  padding: 12px;
+  box-shadow: var(--green-shadow-box);
+  border-radius: @border-radius;
+  color: var(--text-color);
 }
 
-.ForumStatistics.containerNarrow>.row>h2 {
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 1.5;
-    color: var(--text-color);
+.ForumStatistics.containerNarrow > .row > h2 {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--text-color);
 }
 
 .AfruxWidgets-Widget-content {
-    border-radius: @border-radius !important;
-    background: var(--all-bg-color) !important;
-    box-shadow: var(--green-shadow-box);
+  border-radius: @border-radius !important;
+  background: var(--all-bg-color) !important;
+  box-shadow: var(--green-shadow-box);
 }
 
 .Button--link.LinksButton--label,
 .Afrux-NewsWidget,
 .AfruxWidgets-Widget-title {
-    color: var(--text-color) !important;
+  color: var(--text-color) !important;
 }
 
 .Button--icon.Button--link:hover,
 .Button--link.LinksButton--label:hover {
-    color: var(--link-color) !important;
+  color: var(--link-color) !important;
 }
 
 .item-like .Button--link .Button-label,
 .item-dislike .Button--link .Button-label,
 .item-reply .Button--link .Button-label {
-    display: none;
+  display: none;
 }
 
 .item-discussion-views {
-    cursor: default;
+  cursor: default;
 }
 
 .item-like .Button:before {
-    font-family: 'Font Awesome 5 Free', 'Font Awesome 6 Free', 'Font Awesome 6 Pro';
-    font-weight: 600;
-    font-size: 14px;
-    content: '\f164';
-    vertical-align: -1px;
+  font-family: "Font Awesome 5 Free", "Font Awesome 6 Free",
+    "Font Awesome 6 Pro";
+  font-weight: 600;
+  font-size: 14px;
+  content: "\f164";
+  vertical-align: -1px;
 }
 
 .item-dislike .Button:before {
-    font-family: 'Font Awesome 5 Free', 'Font Awesome 6 Free', 'Font Awesome 6 Pro';
-    font-weight: 600;
-    font-size: 14px;
-    content: '\f165';
-    vertical-align: -3px;
+  font-family: "Font Awesome 5 Free", "Font Awesome 6 Free",
+    "Font Awesome 6 Pro";
+  font-weight: 600;
+  font-size: 14px;
+  content: "\f165";
+  vertical-align: -3px;
 }
 
 .item-reply .Button--link:before {
-    font-family: 'Font Awesome 5 Free', 'Font Awesome 6 Free', 'Font Awesome 6 Pro';
-    font-weight: 600;
-    font-size: 15px;
-    content: '\f3e5';
-    margin-right: 4px;
-    vertical-align: -2px;
+  font-family: "Font Awesome 5 Free", "Font Awesome 6 Free",
+    "Font Awesome 6 Pro";
+  font-weight: 600;
+  font-size: 15px;
+  content: "\f3e5";
+  margin-right: 4px;
+  vertical-align: -2px;
 }
 
 .PostStream {
-    border-radius: @border-radius;
-    margin-top: 4px;
-    padding: 4px 22px 4px 22px;
-    background-color: var(--all-bg-color);
-    box-shadow: var(--green-shadow-box);
+  border-radius: @border-radius;
+  margin-top: 4px;
+  padding: 4px 22px 4px 22px;
+  background-color: var(--all-bg-color);
+  box-shadow: var(--green-shadow-box);
 }
 
 .PostsUserPage {
+  border-radius: @border-radius;
+  margin-top: 4px;
+  padding: 12px 22px 12px 22px;
+  background-color: var(--all-bg-color);
+  box-shadow: var(--green-shadow-box);
+}
+
+.DiscussionListItem {
+  margin: 15px 0px 15px 0px;
+  border-radius: @border-radius !important;
+  background-color: var(--all-bg-color);
+  box-shadow: var(--green-shadow-box);
+}
+
+.DiscussionListItem-content {
+  border-radius: @border-radius !important;
+}
+
+.DiscussionListItem:hover {
+  background: var(--all-bg-color-hover);
+}
+
+.DiscussionList-loadMore {
+  margin-top: 4px;
+
+  @media @phone {
+    margin: 4px 8px;
+  }
+
+  .Button {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+aside.DiscussionPage-list {
+  padding: 4px;
+}
+
+.Slidable-content {
+  margin-top: 4px;
+}
+
+@media @phone {
+  .DiscussionListItem {
+    margin: 8px;
+  }
+}
+
+@media @tablet-up {
+  li.item-nav {
+    padding: 2px 12px 2px 12px;
+    border-radius: @border-radius;
+    background-color: var(--all-bg-color);
+    box-shadow: var(--green-shadow-box);
+  }
+
+  .SettingsPage,
+  .UserSecurityPage,
+  .MasqueradeRoot {
     border-radius: @border-radius;
     margin-top: 4px;
     padding: 12px 22px 12px 22px;
     background-color: var(--all-bg-color);
     box-shadow: var(--green-shadow-box);
-}
-
-.DiscussionListItem {
-    margin: 15px 0px 15px 0px;
-    border-radius: @border-radius !important;
-    background-color: var(--all-bg-color);
-    box-shadow: var(--green-shadow-box);
-}
-
-.DiscussionListItem-content {
-    border-radius: @border-radius !important;
-}
-
-.DiscussionListItem:hover {
-    background: var(--all-bg-color-hover);
-}
-
-.DiscussionList-loadMore {
-    margin-top: 4px;
-
-    @media @phone {
-        margin: 4px 8px;
-    }
-
-    .Button {
-        width: 100%;
-        height: 100%;
-    }
-}
-
-aside.DiscussionPage-list {
-    padding: 4px;
-}
-
-.Slidable-content {
-    margin-top: 4px;
-}
-
-@media @phone {
-    .DiscussionListItem {
-        margin: 8px;
-    }
-}
-
-@media @tablet-up {
-    li.item-nav {
-        padding: 2px 12px 2px 12px;
-        border-radius: @border-radius;
-        background-color: var(--all-bg-color);
-        box-shadow: var(--green-shadow-box);
-    }
-
-    .SettingsPage,
-    .UserSecurityPage,
-    .MasqueradeRoot {
-        border-radius: @border-radius;
-        margin-top: 4px;
-        padding: 12px 22px 12px 22px;
-        background-color: var(--all-bg-color);
-        box-shadow: var(--green-shadow-box);
-    }
+  }
 }
 
 .Badge {
-    opacity: 0.9;
-    color: #fff;
+  opacity: 0.9;
+  color: #fff;
 }
 
 .on.Checkbox--switch .Checkbox-display {
-    background: var(--button-primary-bg);
+  background: var(--button-primary-bg);
 }
 
 .on .Checkbox-display {
-    color: var(--button-primary-bg);
+  color: var(--button-primary-bg);
 }
 
 .Post-footer .item-bestAnswerPost {
-    background-color: rgba(0, 161, 133, 0.23) !important;
+  background-color: rgba(0, 161, 133, 0.23) !important;
 }
 
 .Post--BestAnswer {
-    background: var(--button-primary-bg) !important;
+  background: var(--button-primary-bg) !important;
 }
 
 .Badge--bestAnswer {
-    background-color: var(--button-primary-bg) !important;
+  background-color: var(--button-primary-bg) !important;
 }
 
 .UserCard.Hero.UserHero {
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .UserCard.UserCard--popover.in {
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .NotificationGrid td,
 .NotificationGrid th {
-    color: var(--text-color) !important;
+  color: var(--text-color) !important;
 }
 
-.FormControl[type=text] {
-    font-size: 14px !important;
+.FormControl[type="text"] {
+  font-size: 14px !important;
 }
 
 .fa-circle {
-    color: var(--button-primary-bg) !important;
+  color: var(--button-primary-bg) !important;
 }
 
 .emojionearea-category-title {
-    color: var(--text-color) !important;
+  color: var(--text-color) !important;
 }
 
 .emojionearea-category-title,
 .emojionearea-picker,
 .emojionearea-filters {
-    background: var(--control-bg-light) !important;
+  background: var(--control-bg-light) !important;
 }
 
 .emojionearea-filter.active {
-    background: var(--button-primary-bg) !important;
+  background: var(--button-primary-bg) !important;
 }
 
 .emojibtn:hover {
-    background-color: var(--button-primary-bg) !important;
+  background-color: var(--button-primary-bg) !important;
 }
 
 #Combined-Shape,
 #Group-15 {
-    fill: var(--button-color) !important;
+  fill: var(--button-color) !important;
 }
 
 header.Hero.DiscussionHero,
 header.Hero.WelcomeHero {
-    border-radius: @border-radius;
+  border-radius: @border-radius;
 }
 
 .darkenBackground,
 .Hero {
-    border-radius: @border-radius;
-    box-shadow: var(--green-shadow-box);
+  border-radius: @border-radius;
+  box-shadow: var(--green-shadow-box);
 }
 
 .Hero {
-    margin: 12px;
+  margin: 12px;
 }
 
 .fancybox-gallery,
-a[data-fancybox="single"]>img {
-    border: 1px solid var(--control-bg-light) !important;
+a[data-fancybox="single"] > img {
+  border: 1px solid var(--control-bg-light) !important;
 }
 
 .fancybox__toolbar {
-    color: var(--button-primary-bg) !important;
+  color: var(--button-primary-bg) !important;
 }
 
 .f-button svg {
-    stroke: var(--button-primary-bg) !important;
+  stroke: var(--button-primary-bg) !important;
 }
 
 ul.NotificationGroup-content {
-    &>li {
-        margin: 4px 8px;
+  & > li {
+    margin: 4px 8px;
 
-        &>a {
-            &.Notification {
-                border-radius: @border-radius;
-            }
+    & > a {
+      &.Notification {
+        border-radius: @border-radius;
+      }
 
-            &.unread .Notification-title:after {
-                content: '';
-                display: inline-block;
-                width: 1em;
-                height: 1em;
-                border-radius: 50%;
-                background-color: var(--primary-color);
-                transform: translateY(10%);
-                margin-left: 8px;
-            }
-        }
+      &.unread .Notification-title:after {
+        content: "";
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        border-radius: 50%;
+        background-color: var(--primary-color);
+        transform: translateY(10%);
+        margin-left: 8px;
+      }
     }
+  }
 }
 
 .Composer {
-    border-radius: 10px 10px 0 0;
+  border-radius: 10px 10px 0 0;
 }
 
 .ComposerBody-loading {
-    border-radius: 10px;
+  border-radius: 10px;
 }
 
 .DiscussionListItem-title {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .DiscussionListItem-info .item-excerpt {
-    margin-right: 10px !important;
-    font-size: 14px !important;
-    color: var(--muted-color) !important;
+  margin-right: 10px !important;
+  font-size: 14px !important;
+  color: var(--muted-color) !important;
 }
 
-.social-settings>.fa-cog {
-    border-left: none !important;
-    width: 50% !important;
+.social-settings > .fa-cog {
+  border-left: none !important;
+  width: 50% !important;
 }
 
-@media (min-width: 1200px) {
-    .container {
-        width: 1200px;
-    }
+@media (min-width: 1400px) {
+  .container {
+    width: 1400px;
+  }
 }
 
-@media (min-width:992px) {
-    .TagTiles>li {
-        width: 30% !important;
-        border-radius: @border-radius !important;
-        margin: 15px;
-    }
+@media (min-width: 992px) {
+  .TagTiles > li {
+    width: 30% !important;
+    border-radius: @border-radius !important;
+    margin: 15px;
+  }
 
-    .sideNav {
-        margin-right: 30px;
-    }
+  .sideNav {
+    margin-right: 50px;
+    width: 220px;
+  }
 
-    .Composer:not(.fullScreen) {
-        margin-left: 100px;
-        margin-right: 100px;
-    }
+  .AfruxWidgets-sideNavAlt {
+    margin-left: 50px;
+    width: 220px;
+  }
+
+  .Composer:not(.fullScreen) {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
 }
 
-@media (max-width:991px) and (min-width:768px) {
-    .TagTiles>li {
-        width: 45% !important;
-        border-radius: @border-radius !important;
-        margin: 15px;
-    }
-
+@media (max-width: 991px) and (min-width: 768px) {
+  .TagTiles > li {
+    width: 45% !important;
+    border-radius: @border-radius !important;
+    margin: 15px;
+  }
 }
 
 @media (max-width: 767px) {
-    .TagTiles>li {
-        border-radius: @border-radius !important;
-        margin: 15px;
-    }
+  .TagTiles > li {
+    border-radius: @border-radius !important;
+    margin: 15px;
+  }
 
-    .DiscussionListItem-title {
-        font-size: 14px;
-    }
+  .DiscussionListItem-title {
+    font-size: 14px;
+  }
 }
