@@ -354,6 +354,12 @@ ul.NotificationGroup-content {
   }
 }
 
+.hotDiscussions-widget {
+  position: sticky;
+  top: 70px;
+  max-height: 90vh;
+}
+
 .Composer {
   border-radius: 10px 10px 0 0;
 }
@@ -390,7 +396,8 @@ ul.NotificationGroup-content {
     margin: 15px;
   }
 
-  .sideNav, .sideNav>ul {
+  .sideNav,
+  .sideNav > ul {
     margin-right: 50px;
     width: 220px;
   }
@@ -403,6 +410,40 @@ ul.NotificationGroup-content {
   .Composer:not(.fullScreen) {
     margin-left: 100px;
     margin-right: 100px;
+  }
+
+  :not(.TagsPage-nav).sideNav,
+  :not(.TagsPage-nav).sideNav > ul {
+    position: sticky;
+    top: 70px;
+  }
+
+  .sideNav > ul > .item-nav {
+    max-height: 80vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    /* For iOS */
+    cursor: pointer;
+    /* For Firefox */
+    scrollbar-width: thin;
+
+    &:hover {
+      overflow-y: auto;
+    }
+
+    &::-webkit-scrollbar {
+      width: 5px;
+      background-color: #e0e0e0;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #9e9e9e;
+      border-radius: 5px;
+    }
+  }
+
+  .App {
+    overflow-x: visible;
   }
 }
 
