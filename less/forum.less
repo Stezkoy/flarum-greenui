@@ -50,21 +50,16 @@ li {
 }
 
 .FlarumBlog-Article-Author-background,
-.FlarumBlogItem
-  .FlarumBlog-Article
-  .FlarumBlog-Article-Container
-  .FlarumBlog-Article-Image {
+.FlarumBlogItem .FlarumBlog-Article .FlarumBlog-Article-Container .FlarumBlog-Article-Image {
   border-radius: @border-radius @border-radius 0 0 !important;
   box-shadow: unset !important;
 }
 
 .WelcomeHero {
   color: #fdfdfd;
-  background: linear-gradient(
-    160deg,
-    var(--control-bg-shaded),
-    var(--button-primary-bg-hover)
-  );
+  background: linear-gradient(160deg,
+      var(--control-bg-shaded),
+      var(--button-primary-bg-hover));
 }
 
 body,
@@ -81,7 +76,7 @@ body,
   }
 }
 
-.ForumStatistics.containerNarrow > .row > div {
+.ForumStatistics.containerNarrow>.row>div {
   background: var(--all-bg-color);
   padding: 12px;
   box-shadow: var(--green-shadow-box);
@@ -89,7 +84,7 @@ body,
   color: var(--text-color);
 }
 
-.ForumStatistics.containerNarrow > .row > h2 {
+.ForumStatistics.containerNarrow>.row>h2 {
   font-size: 13px;
   font-weight: 400;
   line-height: 1.5;
@@ -319,7 +314,7 @@ header.Hero.WelcomeHero {
 }
 
 .fancybox-gallery,
-a[data-fancybox="single"] > img {
+a[data-fancybox="single"]>img {
   border: 1px solid var(--control-bg-light) !important;
 }
 
@@ -332,10 +327,10 @@ a[data-fancybox="single"] > img {
 }
 
 ul.NotificationGroup-content {
-  & > li {
+  &>li {
     margin: 4px 8px;
 
-    & > a {
+    &>a {
       &.Notification {
         border-radius: @border-radius;
       }
@@ -372,7 +367,7 @@ ul.NotificationGroup-content {
   color: var(--muted-color) !important;
 }
 
-.social-settings > .fa-cog {
+.social-settings>.fa-cog {
   border-left: none !important;
   width: 50% !important;
 }
@@ -381,24 +376,36 @@ ul.NotificationGroup-content {
   .container {
     width: 1400px;
   }
+
+  .sideNav,
+  .sideNav>ul {
+    margin-right: 40px;
+    width: 220px;
+  }
+
+  .AfruxWidgets-sideNavAlt {
+    margin-left: 40px;
+    width: 220px;
+  }
+
 }
 
 @media (min-width: 992px) {
-  .TagTiles > li {
+  .TagTiles>li {
     width: 30% !important;
     border-radius: @border-radius !important;
     margin: 15px;
   }
 
   .sideNav,
-  .sideNav > ul {
+  .sideNav>ul {
     margin-right: 30px;
-    width: 220px;
+    width: 190px;
   }
 
   .AfruxWidgets-sideNavAlt {
     margin-left: 30px;
-    width: 220px;
+    width: 190px;
     position: sticky;
     top: 40px;
     max-height: 80vh;
@@ -410,12 +417,12 @@ ul.NotificationGroup-content {
   }
 
   :not(.TagsPage-nav).sideNav,
-  :not(.TagsPage-nav).sideNav > ul {
+  :not(.TagsPage-nav).sideNav>ul {
     position: sticky;
     top: 70px;
   }
 
-  .sideNav > ul > .item-nav {
+  .sideNav>ul>.item-nav {
     max-height: 80vh;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -445,7 +452,7 @@ ul.NotificationGroup-content {
 }
 
 @media (max-width: 991px) and (min-width: 768px) {
-  .TagTiles > li {
+  .TagTiles>li {
     width: 45% !important;
     border-radius: @border-radius !important;
     margin: 15px;
@@ -453,7 +460,7 @@ ul.NotificationGroup-content {
 }
 
 @media (max-width: 767px) {
-  .TagTiles > li {
+  .TagTiles>li {
     border-radius: @border-radius !important;
     margin: 15px;
   }
