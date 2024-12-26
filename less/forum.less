@@ -325,6 +325,37 @@ a[data-fancybox="single"] > img {
   stroke: var(--button-primary-bg) !important;
 }
 
+.containerwb {
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcomebox-widget .backgrwb {
+  width: 200px;
+}
+
+.backgrwb {
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+  width: 200px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body .backgrwb {
+  background: none;
+}
+
 ul.NotificationGroup-content {
   & > li {
     margin: 4px 8px;
@@ -390,13 +421,13 @@ ul.NotificationGroup-content {
     width: 220px;
   }
 
-  .AfruxWidgets-sideNavAlt {
+  /*   .AfruxWidgets-sideNavAlt {
     margin-left: 30px;
     width: 220px;
     position: sticky;
     top: 40px;
     max-height: 80vh;
-  }
+  } */
 
   .Composer:not(.fullScreen) {
     margin-left: 100px;
