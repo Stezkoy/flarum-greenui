@@ -1,7 +1,6 @@
 /* GreenUi Theme */
 @import "common.less";
 @import "hljs.less";
-@import url("https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Play:wght@400;700&family=Scada:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 :root {
   & when (@config-dark-mode =false) {
@@ -74,8 +73,6 @@ li {
 body,
 #app .App-content {
   background-color: var(--control-bg-light);
-  font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Ubuntu, Cantarell, Oxygen, Roboto, Helvetica, Arial, sans-serif;
 }
 
 #drawer,
@@ -111,11 +108,6 @@ body,
 .AfruxWidgets-Widget-title {
   color: var(--text-color) !important;
 }
-
-/* .Button--icon.Button--link:hover,
-.Button--link.LinksButton--label:hover {
-  color: var(--link-color) !important;
-} */
 
 .item-like .Button--link .Button-label,
 .item-dislike .Button--link .Button-label,
@@ -424,47 +416,12 @@ ul.NotificationGroup-content {
   .AfruxWidgets-sideNavAlt {
     margin-left: 30px;
     width: 220px;
-    /*     position: sticky;
-    top: 40px;
-    max-height: 80vh; */
   }
 
   .Composer:not(.fullScreen) {
     margin-left: 100px;
     margin-right: 100px;
   }
-
-  /* :not(.TagsPage-nav).sideNav,
-  :not(.TagsPage-nav).sideNav > ul {
-    position: sticky;
-    top: 70px;
-  }
-
-  .sideNav > ul > .item-nav {
-    max-height: 80vh;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    cursor: pointer;
-    scrollbar-width: thin;
-
-    &:hover {
-      overflow-y: auto;
-    }
-
-    &::-webkit-scrollbar {
-      width: 5px;
-      background-color: #e0e0e0;
-    }
-
-    &::-webkit-scrollbar-thumb {
-      background: #9e9e9e;
-      border-radius: 5px;
-    }
-  }
-
-  .App {
-    overflow-x: visible;
-  } */
 }
 
 @media (max-width: 991px) and (min-width: 768px) {
